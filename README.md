@@ -1,0 +1,31 @@
+## Description
+
+Responsive React card with the following properties:
+  - id | string
+  - title | string
+  - location | string
+  - description | string
+  - texto | string
+  - price | string
+  - m2 | string
+  - dorms | string
+  - bath | string
+  - garage | string
+  - images={['/static/images/dfp-venta.jpg','/static/images/images.jpeg',]} | [string]
+  - destacado={true} | boolean
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm install`
+
+### `npm start`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.

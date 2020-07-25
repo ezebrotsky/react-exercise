@@ -1,0 +1,254 @@
+.App {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+
+.card {
+  max-width: 875px !important;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin: auto;
+  justify-content: center;
+  border: 1px solid rgba(233, 233, 233, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.formulario {
+  width: 75%;
+  text-align: center;
+  margin: 8px;
+}
+
+.topImage {
+  position: absolute;
+  color: #fff !important;
+  font-weight: 700;
+  z-index: 1;
+  margin-top: 7px;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.topImage .sticky {
+  background-color: rgb(139, 0, 253);
+  padding: 7px;
+  font-size: 14px;
+  font-weight: 800;
+  position: absolute;
+}
+
+.topImage .like {
+  position: absolute;
+  right: 1em;
+}
+
+.cardFooter {
+  background-color: rgba(233, 233, 233, 0.87);
+  padding: 15px;
+  color: #000;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+}
+
+.card h1 {
+  color: #000;
+  margin-bottom: 3px;
+  font-size: 24px;
+  position: absolute;
+}
+
+.card h4 {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 3px;
+  font-size: 16px;
+  font-weight: 400;
+  color:#1ea7dd;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card h5 {
+  color: rgb(190, 190, 190);
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+.card .m2 {
+  color:#1ea7dd;
+  font-size: 12px;
+  font-style: italic;
+}
+
+ul li {
+  display: inline;
+  margin-right: 15px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+ul {
+  padding: 0;
+  font-size: 14px;
+  display: inline;
+}
+
+.contacto {
+  color: #1ea7dd !important;
+  float: right;
+  display: inline;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  text-decoration: none;
+}
+
+@media (min-width: 735px) {
+  .cardImage {
+    flex-grow: 0; 
+    width: 33.3333%;
+    position: relative;
+  }
+
+  .cardBody {
+    flex-grow: 0;
+    width: 66.6666%;
+    flex-basis: 66.6666%;
+    position: relative;
+  }
+
+  .listResponsive {
+    display: none;
+  }
+
+  .priceResponsive {
+    display: none;
+  }
+
+  .contactoResponsive {
+    display: none;
+  }
+}
+
+@media (max-width: 734px) {
+  .card {
+    max-width: 414px !important;
+    min-width: 320px;
+  }
+
+  .cardImage {
+    width: 100%;
+    position: relative;
+  }
+
+  .cardBody {
+    width: 100%;
+  }
+
+  .cardFooter {
+    display: none;
+  }
+
+  .price {
+    display: none;
+  }
+
+  .priceResponsive {
+    position: absolute;
+    color: #fff !important;
+    font-weight: 700;
+    top: 77%;
+    margin: 5px;
+  }
+
+  .listResponsive {
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    top: 87%;
+    margin: 5px;
+  }
+
+  .contactoResponsive {
+    color: rgb(4, 206, 241);
+    float: right;
+    display: inline;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 10px;
+  }
+
+}
+
+/** Slider **/
+.slide-container {
+  width: 100%;
+  min-height:100%;
+}
+
+h3 {
+  text-align: center; 
+}
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 100%;
+  min-height: 246px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.react-slideshow-container .nav {
+  background: transparent !important;
+}
+
+.react-slideshow-container .nav span {
+  border-color: #fff !important;
+}
+
+.each-fade {
+  display: flex;
+}
+
+.each-fade .image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.each-fade .image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.each-fade h2 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #adceed;
+}
